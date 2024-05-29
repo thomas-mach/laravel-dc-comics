@@ -14,6 +14,7 @@
     - php artisan migrate:reset (Delete all migrations and all data)
     - php artisan make:seeder UsersTableSeeder
     - php artisan db:seed --class=UsersTableSeeder
+    -php artisan migrate:fresh
     
 
 
