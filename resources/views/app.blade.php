@@ -9,7 +9,15 @@
 </head>
 
 <body>
-    <h1>Hello Laravel</h1>
+    <header>
+        <h1>this is header</h1>
+    </header>
+    <main>
+        @include('comics.index')
+    </main>
+    <footer>
+        <h1>this is footer</h1>
+    </footer>
 </body>
 
 </html>
