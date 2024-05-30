@@ -13,7 +13,8 @@
         <h1>this is header</h1>
     </header>
     <main>
-        @include('comics.index')
+        @yield('content')
+        <a href="{{route('comics.index')}}">go to index</a>
     </main>
     <footer>
         <h1>this is footer</h1>
