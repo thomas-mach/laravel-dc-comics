@@ -11,10 +11,13 @@
 <body>
     <header>
         <h1>this is header</h1>
+        <a href="{{route('comics.index')}}">go to index</a>
+        <a href="{{route('comics.create')}}">go to create</a>
     </header>
     <main>
         @yield('content')
-        <a href="{{route('comics.index')}}">go to index</a>
+
+
     </main>
     <footer>
         <h1>this is footer</h1>
