@@ -35,4 +35,21 @@ class ComicController extends Controller
 
         return to_route('comics.index');
     }
+    public function edit(Comic $comic)
+    {
+        return view('comics.edit', compact('comic'));
+    }
+    public function update(Request $request, Comic $comic)
+    {
+        $form_data = $request->all();
+        // dd($request->all());
+        // dd($comic);
+        $comic->fill($form_data); //non salva automaticamente sul db
+        // se qui dobbiamo fare qualcos'altro
+        $comic->save();
+        // $comic->update($form_data);
+
+        // redirect alla rotta show di comic 
+        return to_route('comics.show', $comic);
+    }
 }
