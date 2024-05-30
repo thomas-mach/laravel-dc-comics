@@ -37,7 +37,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="type" class="form-label">SALE DATE</label>
+                <label for="type" class="form-label">TYPE</label>
                 <input type="text" name="type" class="form-control" id="type" placeholder="Comic book">
             </div>
 
